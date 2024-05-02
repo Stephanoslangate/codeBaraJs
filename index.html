@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Immobilisation Codification</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Library Code Barre-->
+    <script src="https://cdn.jsdelivr.net/npm/jsbarcode@3.11.5/dist/JsBarcode.all.min.js"></script>
+    <!-- Library PDF-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</head>
+<body>
+    <section>
+        <h4>Générateur de code Barre</h4>
+        <div class="search_bar">
+            <div class="rw">
+                <input type="text" placeholder="Entrer la nature" id="nature">
+                <input type="text" placeholder="Description" id="description">
+            </div>
+            <div class="rw">
+                <input type="text" placeholder="Localisation" id="localisation">
+                <input type="text" placeholder="Nom" id="nom">
+            </div>
+        </div>
+        <div>
+            <button id="bouton_id">Générer</button>
+        </div>
+        <div id="box">
+            <img src="barcode.png" alt="Code bar">
+        </div>
+        <div id="pdf_box"></div>
+    </section>    
+    <script src="script.js"></script>
+</body>
+</html>
